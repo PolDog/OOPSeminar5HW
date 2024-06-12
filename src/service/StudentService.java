@@ -22,7 +22,6 @@ public class StudentService {
     }
 
     public Student getById(int id) throws Exception {
-//        Student student=DataBase.studentsDB.get(id);
         Student student = DataBase.studentsDB
                 .stream()
                 .filter(s -> s.getId() == id)
